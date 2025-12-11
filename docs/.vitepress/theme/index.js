@@ -4,7 +4,7 @@ import 'element-plus/dist/index.css'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
 // 导入业务组件
-import ZButtonGroup from '../../../src/business-components/ZButtonGroup.vue'
+import ZButtonGroup from '../../../src/components/ZButtonGroup.vue'
 
 export default {
   extends: DefaultTheme,

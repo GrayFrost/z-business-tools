@@ -82,15 +82,15 @@ z-business-tools/
 │   ├── utils/                  # 工具函数文档
 │   └── index.md                # 首页
 ├── src/                         # 源代码
-│   ├── business-components/    # 业务组件 (Vue 3 Composition API)
+│   ├── components/             # 业务组件 (Vue 3 Composition API)
 │   │   ├── ZButtonGroup.vue    # 按钮组组件
-│   └── ...
-│   ├── composables/            # Vue Composables
+│   │   └── ...
+│   ├── composables/            # 组合函数
 │   │   ├── useForm.js          # 表单组合函数
-│   └── ...
+│   │   └── ...
 │   ├── utils/                  # 工具函数
 │   │   ├── dateUtils.js        # 日期工具
-│   └── ...
+│   │   └── ...
 │   └── styles/                 # 样式文件
 ├── package.json                # 项目配置
 └── README.md                   # 项目说明
@@ -137,7 +137,7 @@ npm run docs:dev
 ### 开发组件
 
 ```bash
-# 添加新组件到 src/business-components/
+# 添加新组件到 src/components/
 # 创建对应的文档页面 docs/components/
 # 添加演示组件到 docs/.vitepress/components/
 ```

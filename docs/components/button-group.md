@@ -10,7 +10,7 @@ title: 按钮组
 
 <script setup>
 import { ref } from 'vue'
-import ZButtonGroup from '../../src/business-components/ZButtonGroup.vue'
+import ZButtonGroup from '../../src/components/ZButtonGroup.vue'
 
 const basicButtons = ref([
   { text: '添加', type: 'primary', action: 'add' },

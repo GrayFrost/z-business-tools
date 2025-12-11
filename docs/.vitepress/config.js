@@ -61,7 +61,6 @@ export default defineConfig({
       alias: {
         '@': resolve(__dirname, '../../src'),
         '@components': resolve(__dirname, '../../src/components'),
-        '@business-components': resolve(__dirname, '../../src/business-components'),
         '@utils': resolve(__dirname, '../../src/utils'),
         '@composables': resolve(__dirname, '../../src/composables')
       }

@@ -46,7 +46,7 @@ npm run dev
 
 ```
 src/
-├── business-components/    # 业务组件
-├── composables/           # 组合函数
-└── utils/                 # 工具函数
+├── components/     # 业务组件
+├── composables/    # 组合函数
+└── utils/          # 工具函数
 ```
