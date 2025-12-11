@@ -5,47 +5,44 @@
       :key="index"
       :type="button.type || 'default'"
       :size="size"
-      :icon="button.icon"
       :disabled="button.disabled"
       :loading="button.loading"
       @click="handleClick(button.action || index)"
     >
+      <component :is="button.icon" v-if="button.icon" />
       {{ button.text }}
     </el-button>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'ZButtonGroup',
-  props: {
-    buttons: {
-      type: Array,
-      default: () => []
-    },
-    direction: {
-      type: String,
-      default: 'horizontal',
-      validator: value => ['horizontal', 'vertical'].includes(value)
-    },
-    size: {
-      type: String,
-      default: 'medium',
-      validator: value => ['medium', 'small', 'mini'].includes(value)
-    }
+<script setup>
+import { computed } from 'vue'
+
+const props = defineProps({
+  buttons: {
+    type: Array,
+    default: () => []
   },
-  computed: {
-    buttonGroupClass() {
-      return {
-        'z-button-group--vertical': this.direction === 'vertical'
-      }
-    }
+  direction: {
+    type: String,
+    default: 'horizontal',
+    validator: value => ['horizontal', 'vertical'].includes(value)
   },
-  methods: {
-    handleClick(action) {
-      this.$emit('click', action)
-    }
+  size: {
+    type: String,
+    default: 'medium',
+    validator: value => ['medium', 'small', 'mini'].includes(value)
   }
+})
+
+const emit = defineEmits(['click'])
+
+const buttonGroupClass = computed(() => ({
+  'z-button-group--vertical': props.direction === 'vertical'
+}))
+
+const handleClick = (action) => {
+  emit('click', action)
 }
 </script>
 
