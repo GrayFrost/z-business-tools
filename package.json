@@ -1,0 +1,26 @@
+{
+  "name": "z-business-tools",
+  "version": "1.0.0",
+  "description": "业务组件库展示项目",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "vue": "^2.7.14",
+    "vue-router": "^3.6.5",
+    "element-ui": "^2.15.14",
+    "highlight.js": "^11.9.0",
+    "clipboard": "^2.0.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue2": "^2.3.1",
+    "vite": "^5.1.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.19.2",
+    "vue-template-compiler": "^2.7.14"
+  }
+}
