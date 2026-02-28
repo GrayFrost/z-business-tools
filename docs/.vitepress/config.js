@@ -24,7 +24,8 @@ export default defineConfig({
           text: '组件',
           items: [
             { text: '总览', link: '/components/' },
-            { text: '按钮组 ZButtonGroup', link: '/components/button-group' }
+            { text: '按钮组 ZButtonGroup', link: '/components/button-group' },
+            { text: '拖拽组件 Dragger', link: '/components/dragger' }
           ]
         }
       ],

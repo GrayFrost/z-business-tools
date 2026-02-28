@@ -11,6 +11,7 @@ title: 组件总览
 | 组件 | 说明 |
 |------|------|
 | [ZButtonGroup](/components/button-group) | 按钮组组件 |
+| [Dragger](/components/dragger) | 拖拽组件 |
 
 ::: tip 提示
 更多组件开发中...
